@@ -1,0 +1,12 @@
+version: 1.0.{build}
+image: Ubuntu2004
+build_script:
+- sh: >-
+    whoami
+
+    ls -al
+
+    ps
+
+    docker info
+test: off
