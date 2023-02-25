@@ -9,4 +9,6 @@ build_script:
     ps
 
     docker info
+
+    export
 test: off
