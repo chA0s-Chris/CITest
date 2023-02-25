@@ -1,14 +1,17 @@
 version: 1.0.{build}
+
 image: Ubuntu2004
+
+branches:
+  only:
+    - main
+
+environment:
+  CI_DOCKER_LOGIN:
+    secure: sP4F5xtR/cWu6CHAFMkPgQ==
+  CI_DOCKER_TOKEN:
+    secure: l9ZZeorsM3mx7bzzLb8dB2jeae32eVSg4eX44Rq3GjOCcZNQewDj2pztnJ4i7bsy
+
 build_script:
-- sh: >-
-    whoami
-
-    ls -al
-
-    ps
-
-    docker info
-
-    export
+- sh: ./do_stuff.sh
 test: off
