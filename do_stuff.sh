@@ -3,4 +3,4 @@
 
 whoami
 docker ps
-docker login -u ${CI_DOCKER_LOGIN} -p ${CI_DOCKER_TOKEN}
+echo ${CI_DOCKER_TOKEN} | docker login -u ${CI_DOCKER_LOGIN} --password-stdin

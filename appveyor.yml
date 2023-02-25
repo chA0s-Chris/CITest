@@ -13,5 +13,9 @@ environment:
     secure: l9ZZeorsM3mx7bzzLb8dB2jeae32eVSg4eX44Rq3GjOCcZNQewDj2pztnJ4i7bsy
 
 build_script:
-- sh: sh do_stuff.sh
+  - sh: sh do_stuff.sh
+
+on_finish:
+  - sh: docker logout
+
 test: off
