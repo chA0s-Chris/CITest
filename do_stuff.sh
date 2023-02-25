@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 
-DOCKER_PLUGIN_PATH="~/.docker/cli-plugins"
+DOCKER_PLUGIN_PATH="${HOME}/.docker/cli-plugins"
 DOCKER_PUSHRM_CMD="${DOCKER_PLUGIN_PATH}/docker-pushrm"
 DOCKER_PUSHRM_RELEASE="https://github.com/christian-korneck/docker-pushrm/releases/download/v1.9.0/docker-pushrm_linux_amd64"
 
